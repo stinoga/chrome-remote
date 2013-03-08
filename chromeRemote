@@ -1,0 +1,7 @@
+echo "Enable port forwarding..."
+
+adb forward tcp:9222 localabstract:chrome_devtools_remote
+
+echo "Open Chrome to the available tabs on your device..."
+
+open -a Google\ Chrome http://localhost:9222
